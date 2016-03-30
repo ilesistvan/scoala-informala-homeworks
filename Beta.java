@@ -2,15 +2,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Beta {
+    // CODE REVIEW - as a general rule of readability, class members and constants should be defined before the class methods.
+    
 	public static void main(String[] args){
 		Beta test = new Beta();
 	}
 	
+    // CODE REVIEW - only class names start with capital letters.
     ArrayList<Novel>Novels;
     ArrayList<Album>Albums;
     
 
-    Novel n;
+    Novel n; // CODE REVIEW - please use meaningful names.
     Album a;
     Scanner sc;
     
@@ -20,8 +23,9 @@ public Beta(){
 	   Albums = new ArrayList();
 	   sc = new Scanner(System.in);
        boolean running = true;
+// CODE REVIEW - please format the code (i.e use indentation). It's very hard to read the code like this. Looks messy.
 
-
+// CODE REVIEW - the role of a constructor is to build/construct objects. NOT to initialize a process.
 while (running) {
 	System.out.println("If you want to add a new novel press - 0");
 	System.out.println("If you want to add a new album press - 1");
